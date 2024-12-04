@@ -1,7 +1,7 @@
 import re
 
 with open("input") as f:
-    input = "".join(f.read().split("\n"))
+    input = "".join(f.readlines())
 
 
 matches = re.findall("(mul\(\d+,\d+\))|(do(?:n't){0,1}\(\))", input)

@@ -1,7 +1,7 @@
 import re
 
 with open("input") as f:
-    input = "".join(f.read().split("\n"))
+    input = "".join(f.readlines())
 
 
 matches = re.findall("mul\(\d+,\d+\)", input)
